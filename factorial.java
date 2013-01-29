@@ -65,8 +65,12 @@ public class factorial {
 	 * @return	the factorial of n
 	 */
 	private static int recursiveFactorial(int n)  {
+		if (n == 1) {
+			return 1;
+		}
+
+		return n * recursiveFactorial(n-1);
 		
-		return 0; // dummy return so file compiles, replace when writing method	
 	}
 
 	
