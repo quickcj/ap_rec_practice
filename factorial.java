@@ -53,7 +53,7 @@ public class factorial {
 		for (int i = n; i > 0; i--) {
 			factorialCount = factorialCount * i; 
 		}		
-		return tempCount;
+		return factorialCount;
 	}
 	
 	/**
