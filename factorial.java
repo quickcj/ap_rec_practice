@@ -86,7 +86,13 @@ public class factorial {
 		System.out.println("Cannot find the factorial of "+ entry + ".");
 		System.exit(0);
 	}
-
+	/**
+	 * recursiveSum
+	 * 		resersuively computes the sum of n
+	 *
+	 * @param n - number to find sum of
+	 * @return the sum of n
+	 */
 	public static int recursiveSum(int n) {
 		if(n==0) {
 			return 0;
