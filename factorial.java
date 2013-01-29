@@ -9,7 +9,7 @@
 public class factorial {
 
 	/**
-	 * main
+	 * 		main
 	 * 
 	 * 
 	 * @param args - args[0] is the number to find the factorial of.
