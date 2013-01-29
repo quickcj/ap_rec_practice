@@ -31,9 +31,11 @@ public class factorial {
 			quit(args[0]);
 		}
 		
-		int f  = iterativeFactorial(n);
+		//int f  = iterativeFactorial(n);
 
 		// int f  = recursiveFactorial(n);
+		
+		int f = recursiveSum(n);
 		
 		System.out.println("The factorial of "+ n + " is " + f + ".");
 
@@ -70,7 +72,7 @@ public class factorial {
 		}
 
 		return n * recursiveFactorial(n-1);
-		
+
 	}
 
 	
@@ -83,6 +85,15 @@ public class factorial {
 	private static void quit(String entry) {
 		System.out.println("Cannot find the factorial of "+ entry + ".");
 		System.exit(0);
+	}
+
+	public static int recursiveSum(int n) {
+		if(n==0) {
+			return 0;
+		}
+
+		return n + recursiveSum(n-1);
+
 	}
 
 }
