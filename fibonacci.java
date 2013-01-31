@@ -34,7 +34,7 @@ public class fibonacci {
 			System.exit(0);
 		}
 
-		System.out.println("The first " + args[0] + " fibonacci numbers are:");
+		System.out.println("The " + args[0] + "th fibonacci number is:");
 		
 		iterativeFibonacci(Integer.parseInt(args[0]));
 		
@@ -54,7 +54,6 @@ public class fibonacci {
 		}
 		if(n==2) {
 			System.out.println(1);
-			System.out.println(1);
 		}
 		if(n>=3) {
 		int fibonacciNum = 0;
@@ -65,8 +64,6 @@ public class fibonacci {
 			secondLastNumber = lastNumber;
 			lastNumber = fibonacciNum;
 		}
-		System.out.println(lastNumber - secondLastNumber);
-		System.out.println(secondLastNumber);
 		System.out.println(fibonacciNum);
 	}
 	}
