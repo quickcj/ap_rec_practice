@@ -1,3 +1,4 @@
+
 /**************************************************************
  * 
  * 	fibonacci
@@ -48,7 +49,26 @@ public class fibonacci {
 	 * @param n - the number of fibonacci numbers to find. must be non-negative.
 	 */
 	public static void iterativeFibonacci(int n) {
-
+		if(n==1) {
+			System.out.println(1);
+		}
+		if(n==2) {
+			System.out.println(1);
+			System.out.println(1);
+		}
+		if(n>=3) {
+		int fibonacciNum = 0;
+		int secondLastNumber = 1;
+		int lastNumber = 1;
+		for (int i = 3; i <= n; i++) {
+			fibonacciNum = lastNumber + secondLastNumber;
+			secondLastNumber = lastNumber;
+			lastNumber = fibonacciNum;
+		}
+		System.out.println(lastNumber - secondLastNumber);
+		System.out.println(secondLastNumber);
+		System.out.println(fibonacciNum);
+	}
 	}
 
 	/**
