@@ -40,9 +40,18 @@ public class palindrome {
 		 * @return returns true or false based on wheter or not it is a palindrome
 		 */
 	public static boolean iterativePalindrome(String s) {
+		int equalNumbers = 0;
 		for(int i = 0; i < s.length(); i++) {
-			if(char.s[i] = char.s.length()-i)
+			if(charAt(s[i]) == charAt(s.length()-i)){
+				equalNumbers = 1;
+			}
+			equalNumbers = 0;
 		}
+
+		if(equalNumbers = 1) {
+			return true;
+		}
+		return false;
 	}
 
 
