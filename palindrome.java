@@ -42,7 +42,7 @@ public class palindrome {
 	public static boolean iterativePalindrome(String s) {
 		int equalNumbers = 0;
 		for(int i = 0; i < s.length(); i++) {
-			if(charAt(s[i]) == charAt(s.length()-i)){
+			if(s.charAt(s[i]) == s.charAt(s.length()-i)){
 				equalNumbers = 1;
 			}
 			equalNumbers = 0;
